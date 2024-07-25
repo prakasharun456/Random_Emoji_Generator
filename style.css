@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
     height: 100vh;
     display: flex;
@@ -14,6 +19,7 @@ body {
     cursor: pointer;
     transition-property: transform, filter;
     transition-duration: 200ms;
+    padding-bottom: 1rem;
   }
   
   #emoji:hover {
@@ -22,6 +28,16 @@ body {
   }
   .content{
     font-size: 3rem;
-    margin-top: 2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+    #emoji {
+      font-size: 5rem;
+    }
+    .content {
+      font-size: 2rem;
+    }
   }
